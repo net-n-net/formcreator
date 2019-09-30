@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-03-07T14:17:02Z" product-name="formcreator">
+		<header/>
+		<body>
+			<trans-unit id="tx_formcreator_domain_model_form">
+				<source>Form</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.submit">
+				<source>Submit</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.attributes">
+				<source>Attributes</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.mail">
+				<source>Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute">
+				<source>Attribute</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.fieldname">
+				<source>Fieldname</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.fieldlabel">
+				<source>Fieldlabel</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.label1">
+				<source>Label1</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.label2">
+				<source>Label2</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.placeholder">
+				<source>Placeholder</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.validation">
+				<source>Validation</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.mandatory">
+				<source>Mandatory</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.sender_email">
+				<source>Sender Email</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.sender_name">
+				<source>Sender Name</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.size">
+				<source>Size</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.error_message">
+				<source>Error Message</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.datefield">
+				<source>Datefield</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail">
+				<source>Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.sender_name">
+				<source>Sender Name</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.sender_mail">
+				<source>Sender Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.subject">
+				<source>Subject</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.receiver_mail">
+				<source>Receiver Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.body">
+				<source>Body</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.sender_ip">
+				<source>Sender Ip</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_log">
+				<source>Log</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_log.ip">
+				<source>Ip</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_log.params">
+				<source>Params</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_log.form">
+				<source>Form</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,20 @@
+<fieldset>
+	<legend><f:translate key="tx_formcreator_domain_model_form.textfield" /></legend>
+	<div class="form-field">
+		<div class="row">
+			<div class="html col-sm-12">
+				<f:form.textarea 
+					rows="3" 
+					cols="37" 
+					placeholder="{f:translate(key:'tx_formcreator_domain_model_form.text')}"
+					class="input"
+					value="{current.text}"
+					name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[text]',else:'text')}[{current.uid}]"
+					id="field_{field.marker}"  />
+				<f:form.hidden name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[type]',else:'type')}[{current.uid}]" value="2" />
+				<f:form.hidden name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[uid]',else:'uid')}[{current.uid}]" value="{current.uid}" />		
+
+			</div>
+		</div>
+	</div>
+</fieldset>

@@ -1,0 +1,7 @@
+	<fieldset>
+		<legend><f:translate key="tx_formcreator_domain_model_form.divider" /></legend>
+		<hr class="divider" />
+	</fieldset>
+	<f:form.hidden name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[type]',else:'type')}[{current.uid}]" value="6" />
+	<f:form.hidden name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[uid]',else:'uid')}[{current.uid}]" value="{current.uid}" />	
+	<a href="#" return false;" class="deleteField" title="{f:translate(key:'formfield.delete-alt')}"><f:translate key="formfield.delete" /></a>
