@@ -1,0 +1,13 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<v:variable.set name="selectOptions" value="{v:variable.get(name: 'options.{current.uid}',useRawKeys:'1')}" />
+<div class="form-field">
+	<div class="html">
+		<div>
+			<label>{current.fieldlabel} <f:if condition="{current.mandatory}"><sup>*</sup></f:if></label>
+			<f:if condition="{current.mandatory}">
+				<f:then><f:form.select name="{current.fieldname}"  options="{selectOptions}"  prependOptionLabel="{current.placeholder}" additionalAttributes="{data-validation:'required'}" /></f:then>
+				<f:else><f:form.select name="{current.fieldname}"  options="{selectOptions}"  prependOptionLabel="{current.placeholder}" /></f:else>
+			</f:if>
+		</div>
+	</div>
+</div>

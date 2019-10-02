@@ -1,19 +1,19 @@
-# cat=plugin.tx_formcreator_pi1/basic/2; type=int[1-5]; label= Include jQuery
+# cat=plugin.tx_formcreator_pi1/basic/2; type=boolean; label= Include jQuery
    tx_formcreator_pi1.includeJquery =
 
-# cat=plugin.tx_formcreator_pi1/basic/2; type=int[1-5]; label= Include jQuery ui
+# cat=plugin.tx_formcreator_pi1/basic/2; type=boolean; label= Include jQuery ui
    tx_formcreator_pi1.includeJqueryUi = 1
 
-# cat=plugin.tx_formcreator_pi1/basic/2; type=int[1-5]; label= Include formvalidator JS
+# cat=plugin.tx_formcreator_pi1/basic/2; type=boolean; label= Include formvalidator JS
    tx_formcreator_pi1.includeFormvalidator =  1
 
-# cat=plugin.tx_formcreator_pi1/basic/2; type=int[1-5]; label= Include jQuery
+# cat=plugin.tx_formcreator_pi1/basic/2; type=boolean; label= Include jQuery sortable
    tx_formcreator_pi1.includeJquerySortable =  0
    
-# cat=plugin.tx_formcreator_pi1/basic/2; type=int[1-5]; label= Include jQuery
-   tx_formcreator_pi1.includeJqueryBootstrapCss = 1
+# cat=plugin.tx_formcreator_pi1/basic/2; type=boolean; label= Include Bootstrap CSS
+   tx_formcreator_pi1.includeBootstrapCss = 1
    
-# cat=plugin.tx_formcreator_pi1/basic/2; type=int[1-5]; label= Include default CSS
+# cat=plugin.tx_formcreator_pi1/basic/2; type=boolean; label= Include default CSS
    tx_formcreator_pi1.includeDefaultCss = 1
 
    

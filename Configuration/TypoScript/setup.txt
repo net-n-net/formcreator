@@ -14,12 +14,12 @@ plugin.tx_formcreator_pi1 {
 		sender-email = no-reply@noname.com
 		
 		validations{
-			email = data-validation="email
+			email = data-validation="email"
 			integer = data-validation="number"
-			date = data-validation="birthdate"  data-validation-format="dd-mm-yyyy"
+			date = data-validation="date"  data-validation-format="dd-mm-yyyy"
 			alpha = data-validation="custom" data-validation-regexp="^([a-zA-ZäöüßÄÖÜ]+)$"
-			time = data-validation="time"',
-			integer5 = data-validation="number,length"  data-validation-length="5-5"
+			time = data-validation="time"'
+			integer5 = data-validation="number,length" data-validation-length="5-5"
 		}
 	}
 	_LOCAL_LANG{
@@ -59,22 +59,22 @@ config.tx_extbase.persistence.classes {
     }
 }
 
-[globalVar = LIT:0<{$tx_formcreator_pi1.includeJquery}]
-	page.includeJSFooter.jquery = EXT:formcreator/Resources/Public/Js/jquery-2.1.1.min.js
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeJquery}]
+	page.includeJSLibs.jqueryTop = EXT:formcreator/Resources/Public/Js/jquery-2.1.1.min.js
 [global]
-[globalVar = LIT:0<{$tx_formcreator_pi1.includeJqueryUi}]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeJqueryUi}]
 	page.includeJSFooter.jquer-ui = EXT:formcreator/Resources/Public/Js/jquery-ui.min.js
 [global]
-[globalVar = LIT:0<{$tx_formcreator_pi1.includeFormvalidator}]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeFormvalidator}]
 	page.includeJSFooter.jquery-form-validator = EXT:formcreator/Resources/Public/Js/jquery.form-validator.min.js
 [global]
-[globalVar = LIT:0<{$tx_formcreator_pi1.includeJquerySortable}]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeJquerySortable}]
 	page.includeJSFooter.jquery-sortable = EXT:formcreator/Resources/Public/Js/jquery-sortable.js
 [global]
-[globalVar = LIT:0<{$tx_formcreator_pi1.includeJqueryBootstrapCss}]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeBootstrapCss}]
 	page.includeCSS.bootstrap = EXT:formcreator/Resources/Public/Css/bootstrap.min.css
 [global]
-[globalVar = LIT:0<{$tx_formcreator_pi1.includeDefaultCss}]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeDefaultCss}]
 	page.includeCSS.formcreator =  EXT:formcreator/Resources/Public/Css/style.css
 [global]
 

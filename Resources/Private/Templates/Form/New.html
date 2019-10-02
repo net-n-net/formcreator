@@ -1,0 +1,24 @@
+
+<f:layout name="Default" />
+
+
+<f:section name="main">
+<h1><f:translate key="form.new-header" /></h1>
+<f:flashMessages as="flashMessages">
+	<ul class="typo3-flashMessages">
+		<f:for each="{flashMessages}" as="flashMessage">
+			<li class="alert {flashMessage.class}">
+				<h4>{flashMessage.title}</h4>
+				{flashMessage.message}
+			</li>
+		</f:for>
+	</ul>
+</f:flashMessages>
+
+<f:render partial="FormErrors" arguments="{object:Form}" />
+
+<f:form action="create"  name="newForm" object="{newForm}" >
+<f:render partial="Form/FormFields" />
+	<f:form.submit value="Speichern" />
+</f:form>
+</f:section>

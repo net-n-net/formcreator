@@ -1,0 +1,42 @@
+<fieldset>
+	<legend><f:translate key="tx_formcreator_domain_model_form.radio" /></legend>
+	<div class="form-field">
+		<div class="row">
+			<div class="check col-sm-4">
+				<label><f:translate key="tx_formcreator_domain_model_form.name" /></label><f:form.textfield
+						type="input"
+						placeholder="{f:translate(key:'tx_formcreator_domain_model_form.name')}"
+						class="input"
+						name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[fieldname]',else:'fieldname')}[{current.uid}]"
+						value="{current.fieldname}"				
+						/>
+			</div>					
+			<div class="check col-sm-4">	
+				<label><f:translate key="tx_formcreator_domain_model_form.label" /></label><f:form.textfield
+						type="input"
+						placeholder="{f:translate(key:'tx_formcreator_domain_model_form.label')}"
+						class="input"
+						name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[fieldlabel]',else:'fieldlabel')}[{current.uid}]"
+						value="{current.fieldlabel}"				
+						/>	
+			</div>
+			<div class="check col-sm-4">	
+				<label><f:translate key="tx_formcreator_domain_model_form.options" />:</label><f:form.textarea 
+						rows="1" 
+						cols="25" 
+						placeholder="{f:translate(key:'tx_formcreator_domain_model_form.placeholder-options')}"
+						class="input"
+						value="{current.text}"
+						name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[text]',else:'text')}[{current.uid}]"
+						 />
+			</div>
+		</div>
+		<div class="row">
+			<div class="input col-sm-4">
+				<label for="mandatory{current.uid}"><f:translate key="formfield.mandatory" /></label><f:form.checkbox name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[mandatory]',else:'mandatory')}[{current.uid}]" id="mandatory{current.uid}" value="1" checked="{current.mandatory}==1" />
+			</div>
+		</div>	
+		<f:form.hidden name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[type]',else:'type')}[{current.uid}]" value="5" />
+		<f:form.hidden name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[uid]',else:'uid')}[{current.uid}]" value="{current.uid}" />	
+	</div>
+</fieldset>

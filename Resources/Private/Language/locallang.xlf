@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-03-07T14:17:02Z" product-name="formcreator">
+		<header/>
+		<body>
+			<trans-unit id="tx_formcreator_domain_model_form">
+				<source>Form</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.header">
+				<source>Header</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.divider">
+				<source>Divider</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.placeholder">
+				<source>Placeholder</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.textfield">
+				<source>Textfield</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.options">
+				<source>Options</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.placeholder-options">
+				<source>Value,Text</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.radio">
+				<source>Radio</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.select">
+				<source>Select</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.textarea">
+				<source>Textarea</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.field-height">
+				<source>Height in rows</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_formcreator_domain_model_form.text-before-field">
+				<source>Text befor Input Field</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.text-after-field">
+				<source>Text after Input Feld</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.input-field">
+				<source>Input field</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.checkbox">
+				<source>Checkbox</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.error-msg">
+				<source>Error message</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.validation">
+				<source>Validation</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.validation-field">
+				<source>Error message control field</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.format">
+				<source>Format</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.value">
+				<source>Value</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.attributes">
+				<source>Attributes</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.mail">
+				<source>Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute">
+				<source>Attribute</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.label">
+				<source>Label</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_form.field-size">
+				<source>Size of the field in px</source>
+			</trans-unit>
+			
+			
+			<trans-unit id="tx_formcreator_domain_model_attribute.label1">
+				<source>Label1</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.label2">
+				<source>Label2</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.placeholder">
+				<source>Placeholder</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.validation">
+				<source>Validation</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.mandatory">
+				<source>Mandatory</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.sender_email">
+				<source>Sender Email</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.sender_name">
+				<source>Sender Name</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_attribute.size">
+				<source>Size</source>
+			</trans-unit>
+
+			<trans-unit id="tx_formcreator_domain_model_mail">
+				<source>Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.sender_name">
+				<source>Sender Name</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.sender_mail">
+				<source>Sender Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.subject">
+				<source>Subject</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.receiver_mail">
+				<source>Receiver Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.body">
+				<source>Body</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_mail.sender_ip">
+				<source>Sender Ip</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_log">
+				<source>Log</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_log.ip">
+				<source>Ip</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_log.crdate">
+				<source>Created date</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_log.show-detail">
+				<source>show detail</source>
+			</trans-unit>
+			<trans-unit id="tx_formcreator_domain_model_log.params">
+				<source>Params</source>
+			</trans-unit>
+			
+			<trans-unit id="formfield.delete">
+				<source>X</source>
+			</trans-unit>
+			<trans-unit id="formfield.delete-alt">
+				<source>delete</source>
+			</trans-unit>			
+			<trans-unit id="formfield.mandatory">
+				<source>Mandatory field</source>
+			</trans-unit>			
+			<trans-unit id="formfield.datefield">
+				<source>Date field</source>
+			</trans-unit>
+			<trans-unit id="formfield.select-default">
+				<source>Please choose</source>
+			</trans-unit>
+			<trans-unit id="formfield.unique">
+				<source>Field checking for duplicate entry</source>
+			</trans-unit>			
+
+			
+			<trans-unit id="back">
+				<source>back</source>
+			</trans-unit>	
+			
+			<trans-unit id="warning-duplicate-form">
+				<source>You can fill out the form only once.</source>
+			</trans-unit>	
+			<trans-unit id="warning-duplicate-field">
+				<source>There is already an entry for the field: </source>
+			</trans-unit>	
+			
+			<trans-unit id="warning-js-required">
+				<source>You have to activate JavaScript to use this form!</source>
+			</trans-unit>
+
+
+			<trans-unit id="form.new-header">
+				<source>Create new form</source>
+			</trans-unit>
+			<trans-unit id="form.edit-select">
+				<source>Fields selection:</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-select-input">
+				<source>Input field</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-select-textarea">
+				<source>Textarea</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-select-html">
+				<source>HTML</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-select-select">
+				<source>Select field</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-select-checkbox">
+				<source>Checkbox</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-select-radio">
+				<source>Radio button</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-select-header">
+				<source>Header</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-select-divider">
+				<source>Divider</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-formname">
+				<source>Formname</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-submitbutton">
+				<source>Caption of the "Submit" button</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-submitbutton-placeholder">
+				<source>Submit button</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-savebutton">
+				<source>Save and preview</source>
+			</trans-unit>				
+			<trans-unit id="form.edit-backbutton">
+				<source>Back to list</source>
+			</trans-unit>
+			
+			<trans-unit id="attribute.divider">
+				<source>Divider</source>
+			</trans-unit>
+
+			<trans-unit id="form.list-header">
+				<source>Formular</source>
+			</trans-unit>
+			<trans-unit id="form.list-newlink">
+				<source>Create new Formular</source>
+			</trans-unit>
+			<trans-unit id="form.list-editlink">
+				<source>edit</source>
+			</trans-unit>
+			<trans-unit id="form.list-copylink">
+				<source>copy</source>
+			</trans-unit>
+			<trans-unit id="form.list-deletelink">
+				<source>delete</source>
+			</trans-unit>
+
+			<trans-unit id="form.preview-backlink">
+				<source>Back to list</source>
+			</trans-unit>
+			<trans-unit id="form.preview-editink">
+				<source>Edit form</source>
+			</trans-unit>
+			
+
+			<trans-unit id="form.email.intro">
+				<source>The following data has been sent</source>
+			</trans-unit>
+									
+		</body>
+	</file>
+</xliff>

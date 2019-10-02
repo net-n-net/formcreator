@@ -1,0 +1,21 @@
+<f:layout name="Default" />
+<f:section name="main">
+	<f:be.container loadJQuery="true" includeCssFiles="{style:'{f:uri.resource(path:\'Css/backend.css\')}'}" />
+	<f:if condition="{logs}">
+	<h2>Results: <f:count>{logs}</f:count></h2>
+	
+	<table  class="tx_formcreator-log">
+		<tr>
+			<th>uid</th>
+			<th><f:translate key="tx_formcreator_domain_model_log.crdate" /></th>
+			<th></th>
+		<f:for each="{logs}" as="log">
+			<tr>
+				<td>{log.uid}</td>
+				<td><f:format.date format="d.m.Y"> {log.crdate}</f:format.date></td>
+				<td><f:link.action action="show" arguments="{log:log}"><f:translate key="tx_formcreator_domain_model_log.show-detail" /></f:link.action></td>
+			</tr>
+		</f:for>
+	</table>
+	</f:if> 	
+</f:section>

@@ -1,0 +1,11 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<v:variable.set name="validation" value="{v:variable.get(name: 'validations.{current.validation}')}" />
+
+<div class="form-field">
+	<div class="input">
+		<label>{current.fieldlabel} <f:if condition="{current.mandatory}"><sup>*</sup></f:if></label>
+			<textarea value="" placeholder="{current.placeholder}" class="input {f:if(condition:'{current.datefield}',then:'date-picker')}" style="width:{current.size}px" name="tx_formcreator_pi2[{current.fieldname}]" id="field_{current.uid}" {validation} {f:if(condition:'{current.height}',then:'rows="{current.height}"')} {f:if(condition:'{current.mandatory}',then:'data-validation="required"')} {f:if(condition:'{current.errorMessage}',then:'data-validation-error-msg="{current.errorMessage}"')}></textarea>
+	</div>
+</div>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-09T09:39:00Z" product-name="mcs_odunorms">
+		<header/>
+		<body>
+			<trans-unit id="formcreator_config">
+				<source>Configuration</source>
+			</trans-unit>
+			<trans-unit id="showTitle">
+				<source>Select form</source>
+			</trans-unit>
+			<trans-unit id="sender-name">
+				<source>Sender name</source>
+			</trans-unit>
+			<trans-unit id="sender-email">
+				<source>Sender email</source>
+			</trans-unit>
+			<trans-unit id="name">
+				<source>Recipient name</source>
+			</trans-unit>
+			<trans-unit id="email">
+				<source>Recipient email</source>
+			</trans-unit>
+			<trans-unit id="subject">
+				<source>Email subject</source>
+			</trans-unit>
+
+			<trans-unit id="redirect">
+				<source>Redirect to page after submit</source>
+			</trans-unit>
+			<trans-unit id="js-required">
+				<source>Show form only when JavaScript enabled</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

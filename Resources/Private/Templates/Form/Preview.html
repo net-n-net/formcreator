@@ -1,0 +1,58 @@
+
+<f:layout name="Default" />
+
+<f:section name="main">
+		<div class="preview-form" id="previewFormContainer">
+			<f:if condition="{form.attributes}">
+				<f:for each="{form.attributes}" as="attribute">
+					<f:if condition="{attribute.type} == 1">
+						<div class="container">
+							<div class="row"><f:render partial="Form/InputFinal" arguments="{current:attribute}" /> </div>
+						</div>
+					</f:if>
+					<f:if condition="{attribute.type} == 2">
+						<div class="container">
+							<div class="row"><f:render partial="Form/HtmlFinal" arguments="{current:attribute}" /> </div>
+						</div>
+					</f:if>
+					<f:if condition="{attribute.type} == 3">
+						<div class="container">
+							<div class="row"><f:render partial="Form/SelectFinal" arguments="{current:attribute,options:options}" /> </div>
+						</div>
+					</f:if>
+					<f:if condition="{attribute.type} == 4">
+						<div class="container">
+							<div class="row"><f:render partial="Form/CheckboxFinal" arguments="{current:attribute}" /> </div>
+						</div>
+					</f:if>
+					<f:if condition="{attribute.type} == 5">
+						<div class="container">
+							<div class="row"><f:render partial="Form/RadioFinal" arguments="{current:attribute,options:options}" /> </div>
+						</div>
+					</f:if>
+					<f:if condition="{attribute.type} == 6">
+						<div class="container">
+							<div class="row"><f:render partial="Form/DividerFinal" arguments="{current:attribute}" /> </div>
+						</div>
+					</f:if>
+					<f:if condition="{attribute.type} == 7">
+						<div class="container">
+							<div class="row"><f:render partial="Form/TextareaFinal" arguments="{current:attribute}" /> </div>
+						</div>
+					</f:if>
+					<f:if condition="{attribute.type} == 8">
+						<div class="container">
+							<div class="row"><f:render partial="Form/HeaderFinal" arguments="{current:attribute}" /> </div>
+						</div>
+					</f:if>
+				</f:for>
+			</f:if>
+			<f:form.submit name="submit" value="{form.submit}" />
+		</div>
+		<div>
+			<f:link.action action="edit" arguments="{form : form}" section="editFormContainer"><f:translate key="form.preview-editink" /></f:link.action><br />
+			<f:link.action action="list" ><f:translate key="form.preview-backlink" /></f:link.action><br />
+		</div>
+
+		
+</f:section>
