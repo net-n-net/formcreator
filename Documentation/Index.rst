@@ -10,10 +10,8 @@
 .. _start:
 
 =============================================================
-Formcreator
+Extension Name
 =============================================================
-:Classification:
-	form
 
 :Version:
    |release|
@@ -22,18 +20,17 @@ Formcreator
    en
 
 :Authors:
-   Stefan Westermayer
+   Your name
 
-:Copyright:
-   2019
+:Email:
+   you@domain.tld
 
 :License:
-		This document is published under the Open Content License
-		available from http://www.opencontent.org/opl.shtml
-:Rendered:
-		|today|
+   This extension documentation is published under the
+   `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
+   license
 
-Create your forms in the frontend
+{extension.description}
 
 **TYPO3**
 
@@ -48,11 +45,11 @@ Create your forms in the frontend
    It is maintained as part of this third party extension.
 
    If you find an error or something is missing, please:
-   `Report a Problem <https://github.com/net-n-net/formcreator/issues>`__
+   `Report a Problem <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/issues/new>`__
 
 **Extension Manual**
 
-   This documentation is for the TYPO3 extension formcreator.
+   This documentation is for the TYPO3 extension <extkey>.
 
 
 
@@ -76,5 +73,7 @@ Create your forms in the frontend
    Editor/Index
    Installation/Index
    Configuration/Index
-  
+   Developer/Index
+   KnownProblems/Index
+   Sitemap
 
