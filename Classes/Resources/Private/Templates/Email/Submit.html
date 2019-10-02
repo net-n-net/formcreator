@@ -1,0 +1,12 @@
+{namespace nnn=Netnnet\Odunorms\ViewHelpers}
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+    
+    <p><f:translate key="form.email.intro" /> (<f:translate key="tx_formcreator_domain_model_form" />:{form.name})</p>
+
+    <table cellspacing="5" cellpadding="5">
+		<f:for each="{data}" as="value" key="key"> 
+			<tr><td>{key}</td><td>{value}</td></tr>
+		</f:for>
+    </table>
+</div>    

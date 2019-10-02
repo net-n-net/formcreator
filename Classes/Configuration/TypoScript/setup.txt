@@ -1,0 +1,165 @@
+
+plugin.tx_formcreator_pi1 {
+	view {
+		templateRootPath = {$plugin.tx_formcreator_pi1.view.templateRootPath}
+		partialRootPath = {$plugin.tx_formcreator_pi1.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_formcreator_pi1.view.layoutRootPath}
+	}
+	features.requireCHashArgumentForActionArguments = 0 
+	persistence {
+		storagePid = {$plugin.tx_formcreator_pi1.persistence.storagePid}
+	}
+	settings {
+		sender-name = noname
+		sender-email = no-reply@noname.com
+		
+		validations{
+			email = data-validation="email"
+			integer = data-validation="number"
+			date = data-validation="date"  data-validation-format="dd-mm-yyyy"
+			alpha = data-validation="custom" data-validation-regexp="^([a-zA-ZäöüßÄÖÜ]+)$"
+			time = data-validation="time"'
+			integer5 = data-validation="number,length" data-validation-length="5-5"
+		}
+	}
+	_LOCAL_LANG{
+		default {
+			validation{
+				email = E-Mail
+				integer = Integer
+				date = Date
+				alpha = Letters
+				time = Time
+				integer5 = 5 digit number
+			}
+		}
+	}
+}
+
+ # Module configuration
+module.tx_formcreator_export {
+	persistence {
+		storagePid = {$module.tx_formcreator_export.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_formcreator_export.view.templateRootPath}
+		partialRootPath = {$module.tx_formcreator_export.view.partialRootPath}
+		layoutRootPath = {$module.tx_formcreator_export.view.layoutRootPath}
+	}
+}
+
+config.tx_extbase.persistence.classes {
+    Nnn\Formcreator\Domain\Model\Log {
+        mapping {
+            tableName = tx_formcreator_domain_model_log
+            columns {
+                crdate.mapOnProperty = crdate
+            }
+        }
+    }
+}
+
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeJquery}]
+	page.includeJSLibs.jqueryTop = EXT:formcreator/Resources/Public/Js/jquery-2.1.1.min.js
+[global]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeJqueryUi}]
+	page.includeJSFooter.jquer-ui = EXT:formcreator/Resources/Public/Js/jquery-ui.min.js
+[global]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeFormvalidator}]
+	page.includeJSFooter.jquery-form-validator = EXT:formcreator/Resources/Public/Js/jquery.form-validator.min.js
+[global]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeJquerySortable}]
+	page.includeJSFooter.jquery-sortable = EXT:formcreator/Resources/Public/Js/jquery-sortable.js
+[global]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeBootstrapCss}]
+	page.includeCSS.bootstrap = EXT:formcreator/Resources/Public/Css/bootstrap.min.css
+[global]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeDefaultCss}]
+	page.includeCSS.formcreator =  EXT:formcreator/Resources/Public/Css/style.css
+[global]
+
+
+page.includeJSFooter.formcreator = EXT:formcreator/Resources/Public/Js/formcreator.js
+
+
+
+getInput = PAGE
+getInput {
+	typeNum = 321
+	config {
+		disableAllHeaderCode = 1
+		additionalHeaders = Content-type:application/html|Cache-Control:no-cache, must-revalidate, max-age=0|Pragma:no-cache
+		xhtml_cleaning = 0
+		admPanel = 0
+	}
+	10 < tt_content.list.20.formcreator_pi1
+	10 = USER_INT
+	10{
+		action = getInput
+		controller = Form
+		switchableControllerActions.Form.1 = getInput
+	}
+}
+
+getHtml < getInput
+getHtml{
+	typeNum = 322
+	10{
+		action = getHtml
+		switchableControllerActions.Form.1 = getHtml
+	}
+}
+
+getSelect < getInput
+getSelect{
+	typeNum = 323
+	10{
+		action = getSelect
+		switchableControllerActions.Form.1 = getSelect
+	}
+}
+
+getCheckbox < getInput
+getCheckbox{
+	typeNum = 324
+	10{
+		action = getCheckbox
+		switchableControllerActions.Form.1 = getCheckbox
+	}
+}
+
+getRadio < getInput
+getRadio{
+	typeNum = 325
+	10{
+		action = getRadio
+		switchableControllerActions.Form.1 = getRadio
+	}
+}
+
+getDivider < getInput
+getDivider{
+	typeNum = 326
+	10{
+		action = getDivider
+		switchableControllerActions.Form.1 = getDivider
+	}
+}
+
+getTextarea < getInput
+getTextarea{
+	typeNum = 327
+	10{
+		action = getTextarea
+		switchableControllerActions.Form.1 = getTextarea
+	}
+}
+
+getHeader < getInput
+getHeader{
+	typeNum = 328
+	10{
+		action = getHeader
+		switchableControllerActions.Form.1 = getHeader
+	}
+}

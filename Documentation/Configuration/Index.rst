@@ -7,55 +7,47 @@
 Configuration
 =============
 
-Target group: **Developers, Integrators**
+Target group: **Integrators**
 
-How is the extension configured? Aim to provide simple instructions detailing 
-how the extension is configured. Always assume that the user has no prior experience 
-of using your extension.
+Constants
+===============
+- Include jQuery (Default:false)
+- Include jQuery ui (Default:true)
+- Include formvalidator JS (Default:true)
+- Include jQuery sortable (Default:true)
+- Include Bootstrap CSS (Default:true)
+- Include default CSS (Default:true)
 
-Try and provide a typical use case for your extension and detail each of the 
-steps required to get the extension running.
-
-
-Typical Example
+Validation
 ===============
 
-- Do we need to include a static template?
-- For example add a code snippet with comments
+- Only jquery validation is available
+- If you want to use the validation and don't have included jQuery, please activate "Include jQuery" in the Constant Editor
+- You can use the validations provided on http://formvalidator.net/
 
-Minimal example of TypoScript:
-
-- Code-blocks have support for syntax highlighting
-- Use any supported language
+Example of TypoScript to add a new validation:
 
 .. code-block:: typoscript
 
-   plugin.tx_myextension.settings {
-      # configure basic email settings
-      email {
-         subject = Some subject
-         from = someemail@domain.de
+   plugin.tx_formcreator_pi1 {
+      settings{
+         validations{
+             # define here your validation (see http://formvalidator.net/)
+             # example: User name (4 characters minimum, only alphanumeric characters):
+             username = data-validation="length alphanumeric" data-validation-length="min4"
+         }
+      }
+      _LOCAL_LANG{
+         default {
+	    validation{
+               # this is the label shown in the selectbox for validations when you create a form
+	       username = Username with 4 characters minimum
+	    }
+	 }
       }
    }
 
 .. _configuration-typoscript:
 
-TypoScript Reference
-====================
-
-Possible subsections: Reference of TypoScript options.
-The construct below show the recommended structure for
-TypoScript properties listing and description.
-
-When detailing data types or standard TypoScript
-features, don't hesitate to cross-link to the TypoScript
-Reference as shown below.
-
-
-See `Hyperlinks & Cross-Referencing <https://docs.typo3.org/typo3cms/HowToDocument/WritingReST/Hyperlinks.html>`
-for information about how to use cross-references.
-
-See the :file:`Settings.cgf` file for the declaration of cross-linking keys.
-You can add more keys besides tsref.
 
 

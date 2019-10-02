@@ -1,17 +1,22 @@
-.. include:: ../Includes.txt
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
 
-
+.. include:: ../../Includes.txt
 
 .. _installation:
 
-============
 Installation
 ============
 
-Target group: **Administrators**
+#. Switch to the module “Extension Manager”.
 
-- How is the extension installed?
-- Are there any dependencies that need to be resolved?
+#. Get the extension from the Extension Manager by searching for the extension key *formcreator* and import the extension from the repository.
 
-You can also refer to general TYPO3 documentation, for example the
-:ref:`t3install:start`.
+
+Include static TypoScript
+--------------------------------------
+#. Go to your main TYPOScript template and choose **Info/Modify**
+#. Press the link **Edit the whole template record**
+#. Select **Form creator (formcreator)** at the field *Include static (from extensions)*
