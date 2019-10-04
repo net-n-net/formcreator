@@ -74,6 +74,9 @@ config.tx_extbase.persistence.classes {
 [globalVar = LIT:1 = {$tx_formcreator_pi1.includeBootstrapCss}]
 	page.includeCSS.bootstrap = EXT:formcreator/Resources/Public/Css/bootstrap.min.css
 [global]
+[globalVar = LIT:1 = {$tx_formcreator_pi1.includeJqueryUiCss}]
+	page.includeCSS.jqueryUI =  EXT:formcreator/Resources/Public/Css/jquery-ui.min.css
+[global]
 [globalVar = LIT:1 = {$tx_formcreator_pi1.includeDefaultCss}]
 	page.includeCSS.formcreator =  EXT:formcreator/Resources/Public/Css/style.css
 [global]

@@ -13,6 +13,9 @@
 # cat=plugin.tx_formcreator_pi1/basic/2; type=boolean; label= Include Bootstrap CSS
    tx_formcreator_pi1.includeBootstrapCss = 1
    
+# cat=plugin.tx_formcreator_pi1/basic/2; type=boolean; label= Include jQuery UI CSS
+   tx_formcreator_pi1.includeJqueryUiCss = 1
+   
 # cat=plugin.tx_formcreator_pi1/basic/2; type=boolean; label= Include default CSS
    tx_formcreator_pi1.includeDefaultCss = 1
 
