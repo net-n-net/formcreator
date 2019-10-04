@@ -1,7 +1,9 @@
 {
     "name": "nnn/formcreator",
     "type": "typo3-cms-extension",
-    "description": "Extension to create forms in the frontend",
+    "description": "This extension makes it possible to create input forms via an administration page in your website (not in the TYPO3 backend).
+	 Editors can not or should not always edit forms via the TYPO3 backend. With this extension, an administration mask can be created on a front-end page with which forms on web pages can be easily created.
+	 You can create easily your own validations without programming.",
     "license": "GPL-2.0-or-later",
     "require": {
         "typo3/cms-core": "^8.7.8"
