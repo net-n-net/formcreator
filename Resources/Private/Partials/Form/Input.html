@@ -86,7 +86,18 @@
 			<div class="input">		
 				<div class="input col-sm-4">
 				<label><f:translate key="tx_formcreator_domain_model_form.validation" />:</label>
-				<f:form.select name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[validation]',else:'validation')}[{current.uid}]" options="{validations}" class="filter-types" value="{current.validation}" prependOptionLabel="{f:translate(key:'formfield.select-default')}" />
+				<f:if condition="{ajax}">
+					<f:then>
+						<f:form.select name="tx_formcreator_pi1[validation][{current.uid}]" class="filter-types" value="{current.validation}" prependOptionLabel="{f:translate(key:'formfield.select-default')}">
+							<f:for each="{validations}" as="validation" key="key" >
+								<option value="{key}"><f:translate key="validation.{key}" /></option>
+							</f:for>
+						</f:form.select>
+					</f:then>
+					<f:else>
+						<f:form.select name="validation[{current.uid}]" options="{validations}" class="filter-types" value="{current.validation}" prependOptionLabel="{f:translate(key:'formfield.select-default')}" />
+					</f:else>
+				</f:if>
 				</div>
 				<div class="input col-sm-4">
 					<label for="uniquefield{current.uid}"><f:translate key="formfield.unique" /></label><f:form.checkbox name="{f:if(condition:'{ajax}',then:'tx_formcreator_pi1[uniquefield]',else:'uniquefield')}[{current.uid}]" id="uniquefield{current.uid}" value="1" checked="{f:if(condition:'{current.uniquefield}',then:'checked')}"/>
